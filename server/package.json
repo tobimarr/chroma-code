@@ -1,0 +1,23 @@
+{
+  "name": "chroma-code",
+  "version": "1.0.0",
+  "description": "Chroma key on canvas",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tobimarr/chroma-code.git"
+  },
+  "author": "Tobi Marr, Julian Treutler",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tobimarr/chroma-code/issues"
+  },
+  "homepage": "https://github.com/tobimarr/chroma-code#readme",
+  "dependencies": {
+    "express": "4.17.1"
+  }
+}
