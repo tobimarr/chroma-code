@@ -21,12 +21,11 @@
       <p>
         <label for="backgroundSelect">Select Background</label>
         <select id="backgroundSelect">
-
           <option value="https://i.ibb.co/1v9W1Py/9ebackground.jpg">
             9e Background
           </option>
 
-          <option value="images/ploeppi.jpeg">
+          <option value="http://localhost:3000/images/ploeppi.jpeg">
             Plöppi
           </option>
         </select>
@@ -37,10 +36,15 @@
       </p>
     </div>
     <div class="wrapper">
-
       <div class="canvas-wrapper">
         <video id="video" controls autoplay></video>
-        <img id="background" class="canvas-background" src="https://i.ibb.co/1v9W1Py/9ebackground.jpg" width="640" height="480">
+        <img
+          id="background"
+          class="canvas-background"
+          src="https://i.ibb.co/1v9W1Py/9ebackground.jpg"
+          width="640"
+          height="480"
+        />
         <canvas id="canvas1" class="canvas" width="640" height="480"></canvas>
       </div>
       <div>

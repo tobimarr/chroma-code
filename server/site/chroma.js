@@ -8,7 +8,7 @@ screenshotButton = document.getElementById("take-screenshot");
 
 screenshotButton.addEventListener("click", takeScreenshot);
 
-backgroundSelect.addEventListener('change', (e) => {
+backgroundSelect.addEventListener("change", e => {
   background.src = e.target.value;
 });
 
@@ -34,7 +34,7 @@ function takeScreenshot() {
 
     window.location.href = image;
     canvas_context.restore();
-  }
+  };
 }
 
 // Get video

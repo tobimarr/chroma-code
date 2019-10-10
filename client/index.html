@@ -1,31 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Some Chroma key</title>
+    <title>9e Chroma</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="chroma.css" />
   </head>
 
   <body>
-    <h1>Chroma key in the browser</h1>
+    <h1>9e Chroma</h1>
+    <div class="picker">
+      <p>
+        <label for="colorFilter">Select color</label>
+        <select id="colorFilter">
+          <option>Green</option>
+          <option>Blue</option>
+          <option>Red</option>
+        </select>
+      </p>
+
+      <p>
+        <label for="backgroundSelect">Select Background</label>
+        <select id="backgroundSelect">
+          <option value="https://i.ibb.co/1v9W1Py/9ebackground.jpg">
+            9e Background
+          </option>
+
+          <option value="http://localhost:3000/images/ploeppi.jpeg">
+            Plöppi
+          </option>
+        </select>
+      </p>
+
+      <p>
+        <button id="take-screenshot">Speichern</button>
+      </p>
+    </div>
     <div class="wrapper">
-      <div>
+      <div class="canvas-wrapper">
         <video id="video" controls autoplay></video>
+        <img
+          id="background"
+          class="canvas-background"
+          src="https://i.ibb.co/1v9W1Py/9ebackground.jpg"
+          width="640"
+          height="480"
+        />
         <canvas id="canvas1" class="canvas" width="640" height="480"></canvas>
       </div>
       <div>
         <span>Video</span>
         <span>Canvas</span>
       </div>
-    </div>
-    <div class="picker">
-      <label for="colorFilter">Select color</label>
-      <select id="colorFilter">
-        <option>Green</option>
-        <option>Blue</option>
-        <option>Red</option>
-      </select>
-      <button id="take-screenshot">Screenshot</button>
     </div>
 
     <script type="text/javascript" src="chroma.js"></script>
